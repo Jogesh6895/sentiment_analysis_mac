@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2076E1E82F098A13003649FA /* sentiment_analysis.py in Resources */ = {isa = PBXBuildFile; fileRef = 2076E1E72F098A13003649FA /* sentiment_analysis.py */; };
 		20855F38241E301B009343B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20855F37241E301B009343B6 /* AppDelegate.swift */; };
 		20855F3A241E301B009343B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20855F39241E301B009343B6 /* ViewController.swift */; };
 		20855F3C241E301D009343B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20855F3B241E301D009343B6 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2076E1E72F098A13003649FA /* sentiment_analysis.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sentiment_analysis.py; sourceTree = "<group>"; };
 		20855F34241E301B009343B6 /* LiveSentimentAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveSentimentAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20855F37241E301B009343B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20855F39241E301B009343B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				20855F3D241E301D009343B6 /* Main.storyboard */,
 				20855F40241E301D009343B6 /* Info.plist */,
 				20855F41241E301D009343B6 /* LiveSentimentAnalysis.entitlements */,
+				2076E1E72F098A13003649FA /* sentiment_analysis.py */,
 			);
 			path = LiveSentimentAnalysis;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20855F3C241E301D009343B6 /* Assets.xcassets in Resources */,
+				2076E1E82F098A13003649FA /* sentiment_analysis.py in Resources */,
 				20855F3F241E301D009343B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

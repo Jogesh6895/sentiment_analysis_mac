@@ -24,7 +24,14 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     @IBAction func submit(_ sender: Any) {
         print(text_box_outlet.stringValue)
         var commandOutput = ""
-        commandOutput = try self.executeCommand(command: "/Users/jogeshghadai/anaconda3/envs/workenv/bin/python3", args: ["/Users/jogeshghadai/Desktop/Live_Sentiment_Analysis/sentiment_analysis.py",text_box_outlet.stringValue])
+        guard let scriptPath = Bundle.main.path(
+            forResource: "sentiment_analysis",
+            ofType: "py"
+        ) else {
+            print("Python script not found")
+            return
+        }
+        commandOutput = try self.executeCommand(command: "/usr/local/bin/python3", args: [scriptPath,text_box_outlet.stringValue])
         print("Sentiment Score: \(commandOutput)")
         self.sentiment_score_label.stringValue = "Sentiment Score: \(commandOutput)"
         self.result_label.stringValue = self.text_box_outlet.stringValue
@@ -54,7 +61,14 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         print(dynamic_text_outlet.stringValue)
         var commandOutput = ""
-        commandOutput = try self.executeCommand(command: "/Users/jogeshghadai/anaconda3/envs/workenv/bin/python3", args: ["/Users/jogeshghadai/Desktop/Live_Sentiment_Analysis/sentiment_analysis.py",dynamic_text_outlet.stringValue])
+        guard let scriptPath = Bundle.main.path(
+            forResource: "sentiment_analysis",
+            ofType: "py"
+        ) else {
+            print("Python script not found")
+            return
+        }
+        commandOutput = try self.executeCommand(command: "/usr/local/bin/python3", args: [scriptPath,dynamic_text_outlet.stringValue])
         print("Sentiment Score: \(commandOutput)")
         self.sentiment_score_label.stringValue = "Sentiment Score: \(commandOutput)"
         self.result_label.stringValue = self.dynamic_text_outlet.stringValue
