@@ -157,6 +157,16 @@ If Xcode build fails:
 - Clean the build folder: `Product > Clean Build Folder` (Cmd+Shift+K)
 - Verify Xcode command-line tools are installed: `xcode-select --install`
 
-## License
+## 📄 License
 
-Copyright © 2020 Jogesh Ghadai. All rights reserved.
+Copyright © 2020 Jogesh Kumar Ghadai. All rights reserved.<br>
+This project is a open source project and is available under the [MIT License](LICENSE).
+
+
+## 👨‍💻 Author
+
+**Jogesh Kumar Ghadai**
+- Email: jogesh6895@gmail.com
+- GitHub: [@Jogesh6895](https://github.com/Jogesh6895)
+
+---
